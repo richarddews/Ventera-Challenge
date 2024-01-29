@@ -1,5 +1,6 @@
 # Ventera-Challenge
-Challenge Response(s) for Ventera Challenge
-Answers, to the Challenge questions and requirements, are in-line within the modified original Word Postgis Database Engineer Challenge.docx within this repository.
-SQL statements are provided in the Richard Dews - Ventera Coding Challenge SQL Statements.sql file, also within this repository.
-The PostgreSQL 15 DB, containing the uploaded Lidar data and subsequent tables (per the Challenge Requirements), is also backed up and placed within this repository.
+Challenge Response(s) for Ventera Challenge -- Richard G. Dews
+1) Answers, to the Challenge questions and requirements, are in-line within the modified original Word Postgis Database Engineer Challenge.docx within this repository.
+2) SQL statements are provided in the Richard Dews - Ventera Coding Challenge SQL Statements.sql file, also within this repository.
+3) The PostgreSQL 15 DB, containing the uploaded Lidar data and subsequent tables (per the Challenge Requirements), is also backed up and placed within this repository as a set of tar files (57 of them); a) I performed the following command, to dump the database to a file: pg_dump -U postgres postgres > "C:\Users\Richard\Downloads\Richard_Dews PG_Challenge_Dump"; b) I then used 7zip to tar/split this backup file (DB) into 57 10MB pieces, under the nomenclature Richard_Dews PG_Challenge_Dump.tar.xxx (where xxx represents 001 through 057). In order to restore this DB to your PostgreSQL host, perform pg_restore -d postgres Richard_Dews PG_Challenge_Dump (after using 7zip to recombine the 57 tar pieces described above).
+4) The original USGS Lidar LAZ file, i.	USGS Lidar Point Cloud NC_Phase5_2018_A18 LA_37_00964920_.laz, has been added to this repository via: a) 7zip to nomenclature USGS_LPC_NC_Phase5_2018_A18_LA_37_00964920_.tar.xxx (where xxx represents 001 through 020)
